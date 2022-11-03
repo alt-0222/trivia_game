@@ -1,9 +1,9 @@
-// SPDX-License-Identifier: MIT License
+// SPDX-License-Identifier: Unlicensed
 
 pragma solidity ^0.8.17;
 
 import "../src/TriviaGame.sol";
-import "ds-test/test.sol";
+import "../forge-std/lib/ds-test/src/test.sol";
 
 
 interface CheatCodes {
