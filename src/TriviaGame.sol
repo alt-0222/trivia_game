@@ -1,7 +1,8 @@
-// SPDX-License-Identifier: MIT License
-
+// SPDX-License-Identifier: Unlicensed
 pragma solidity ^0.8.17;
 
+
+/// @title A simple trivia game
 contract TriviaGame {
     bytes32 public salt = bytes32("321123321");
     bytes32 public hashedAnswer;
