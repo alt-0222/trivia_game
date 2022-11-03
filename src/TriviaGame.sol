@@ -15,7 +15,7 @@ contract TriviaGame {
     }
 
     function guess(string calldata answer) public {
-        require(keccak256(abi.encodedPacked(salt, answer)) == hashedAnswer);
+        require(keccak256(abi.encodePacked(salt, answer)) == hashedAnswer);
         if (address(this).balance > 0) {
             emit AnswerGuessed();
         (bool sent, bytes memory data) = payable(msg.sender).call{value: address(this).balance}("");
